@@ -5,4 +5,10 @@ db.collection("Recensioni")
     voto: 3,
     });
 
+
+db.collection("Recensioni")
+.doc ("1")
+.set ({
+    descrizione: "pippo"
+})
     //è un metodo asincrono che restituisce un oggetto di tipo promise!
