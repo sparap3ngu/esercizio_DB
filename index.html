@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <script src="main.js"></script>
+    <!--script src="main.js"></-script-->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script>
@@ -16,8 +16,16 @@
             apiKey: "AIzaSyCtvjVoc0KhG7eEh4W8N8AqoWKhiz4rYzs",
             authDomain: "info2022-b3181.firebaseapp.com",
             projectId: "info2022-b3181"
-        })
-        var db = firebase.firestore();
-        </script>        
+        });
+        let db = firebase.firestore();
+    </script>    
+    <script>
+      db.collection("Recensioni")
+      .doc ("1")
+      .set ({
+        descrizione: "pippo"
+      })
+          
+    </script>    
 </body>
 </html>
