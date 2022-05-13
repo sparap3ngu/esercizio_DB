@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    CIAO CIAO
     <!--script src="main.js"></-script-->
     <script>
       import { initializeApp } from "firebase/app";
@@ -16,14 +16,19 @@
         apiKey: "AIzaSyCtvjVoc0KhG7eEh4W8N8AqoWKhiz4rYzs",
         authDomain: "info2022-b3181.firebaseapp.com",
         projectId: "info2022-b3181",
-        storageBucket: "info2022-b3181.appspot.com",
-        messagingSenderId: "965024957089",
-        appId: "1:965024957089:web:0021fa0319aaa998a566e0",
-        measurementId: "G-4G5CMZ6VBR"
       };
 
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
+    </script>
+
+    <script>
+      db.collection("Recensioni")
+      .add({
+        descrizione: "Top wow",
+        utente: "pippo",
+        voto: 3,
+      })
     </script>
 
     <!--<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
